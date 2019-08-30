@@ -1,0 +1,1 @@
+elementy surowe zachowane do obróbki w razie potrzeby (zamieszczone bezpoœrednio w JS)

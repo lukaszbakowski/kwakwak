@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@media only screen and (min-width: 991px) {
+	nav {
+		margin:0;
+		color:white;
+		height:2.5rem;
+		padding:0;
+		background-color:orange;
+		border-bottom:1px solid rgb(255,105,0);
+		border-top:1px solid rgb(255,105,0);
+		position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -ms-sticky;
+		position: -o-sticky;
+		position: sticky;
+		top:0;
+		left:0;
+		z-index:100;
+			
+	}
+	ol.navbar {
+		padding:0;
+		margin:0 auto;
+		display:                 flex;
+		display:                 -webkit-flex; /* Safari 8 */
+		flex-wrap:               wrap;
+		-webkit-flex-wrap:       wrap;         /* Safari 8 */
+		justify-content:         center;
+		-webkit-justify-content: center;       /* Safari 8 */
+		width:calc(5 * 8.3rem);
+	}
+
+	ol.navbar > li {
+		padding:0;
+		list-style-type:none;
+		margin:0;
+		background-color:orange;
+	}
+	ol.navbar > li > a.navlink:hover {
+		font-size:1.2rem;
+	}
+	li > a.navlink {
+		color:white;
+		display:block;
+		line-height:calc(2.5rem - 0px);
+		margin:0;
+		height:calc(2.5rem - 2px);
+		float:left;
+		width:8.3rem;
+		background-color:orange;
+
+
+	}
+	li > a.navlink:hover, .navlink.active {
+		color:orangered;
+		border:1px solid rgb(255,105,0);
+		border-top-color:white;
+		border-left:0.45rem solid orangered;
+		border-bottom:3px solid orangered;
+		border-radius:0 0 7px 7px;
+		background-color:white;
+		height:calc(2.5rem - 1px);
+		margin-top:-1px;
+	}
+	.active {
+		color:black;
+		text-shadow:none;
+	}
+	.active {
+		-webkit-transition:color 3.5s, text-shadow 1.5s, border-bottom 1s, border-left 1s, background-color 1.5s;
+		transition:color 3.5s, text-shadow 1.5s, border-bottom 1s, border-left 1s, background-color 1.5s;
+	}
+}
+@media (min-width: 1px) and (max-width: 991px) {
+		#lewa, #prawa {display:none;}
+		nav {
+		margin:0;
+		color:white;
+		height:4rem;
+		padding:0;
+		background-color:orange;
+		border-bottom:1px solid rgb(255,105,0);
+		border-top:1px solid rgb(255,105,0);
+		position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -ms-sticky;
+		position: -o-sticky;
+		position: sticky;
+		top:0;
+		left:0;
+		z-index:100;
+			
+	}
+	ol.navbar {
+		padding:0;
+		margin:0;
+		display:                 flex;
+		display:                 -webkit-flex; /* Safari 8 */
+		flex-wrap:               wrap;
+		-webkit-flex-wrap:       wrap;         /* Safari 8 */
+		justify-content:         center;
+		-webkit-justify-content: center;       /* Safari 8 */
+		width:100%;
+
+	}
+
+	ol.navbar > li {
+		padding:0;
+		list-style-type:none;
+		margin:0;
+		width:20%;
+		background-color:orange;
+		text-align:center;
+	}
+
+	li > a.navlink {
+		color:white;
+		display:block;
+		line-height:calc(3.5rem - 0px);
+		margin:0;
+		height:calc(4rem - 2px);
+		width:100%;
+		background-color:orange;
+		font-size:3rem;
+	}
+	.navlink.active {
+		color:black;
+		text-shadow:none;
+	}
+	li > a.navlink:hover {color:black;}
+}

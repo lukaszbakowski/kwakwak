@@ -1,0 +1,131 @@
+select {
+	background-color:white;
+	font-size:1.2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance:none;
+    color: #555;
+    margin: 0;
+	border:0.15rem solid orange;
+	border-radius:0.45rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	text-align:center;
+	margin-right:0.5rem;
+	padding:0.05rem 0.15rem;
+	width:13rem;
+
+}
+select:hover {
+	background-color:rgba(255,255,255,0.95);
+	border:0.15rem solid orangered;
+}
+select:active, select:focus {
+	border:0.15rem solid orangered;
+}
+optgroup {background-color:white;}
+
+	
+#submitplus {
+    font-size: 1.5rem;
+    color: white;
+	text-align:center;
+	margin-left:0.2rem;
+	background-color:inherit;
+	border:none;
+}
+.ispan {
+	color:white;
+}
+#submitplus:hover {
+	color:orangered;
+}
+#submitplus:active {
+		transform:scale(0.95);
+}
+#inputplus {
+	width: calc(15rem - 2.2rem);
+	vertical-align:middle;
+}
+.inputplus {
+	background-color:white;
+	border:2px solid orange;
+	font-size:1.2rem;
+	text-align:center;
+	padding:0.05rem 0.15rem;
+	cursor:text;
+	border-radius:0.45rem;
+}
+.inputplus:hover {
+	background-color:rgba(255,255,255,0.95);
+	border:0.15rem solid orangered;
+}
+.inputplus:focus, .inputplus:active {
+	border:0.15rem solid orangered;
+}
+
+/* 
+
+
+----------------------HASHTAGI------------------------------
+
+
+*/
+#tagkont {
+	padding:0;
+	margin:0 auto;
+	width:98%;
+	display:inline-block;
+	position:relative;
+}
+input[type="text"].inputtag {
+	padding:0;
+	margin:0;
+}
+
+#submitminus {
+	font-size:0.9rem;
+	border:none;
+	border-radius:0.4rem;
+	color:white;
+	background-color:rgba(222,11,0,0.4);
+	padding:0.1rem;
+	width:1.5rem;
+	height:1.5rem;
+}
+#submitminus:hover {
+	transform:scale(1.05);
+	background-color:orangered;
+}
+#submitminus:active {
+	transform:scale(0.95);
+}
+li.konttag {
+	padding:0.01rem;
+	margin:1% 0 0;
+	margin-right:0.5rem;
+	float:left;
+	border-radius:0.45rem;
+	color:black;
+	background-color:rgba(128,128,128,0.2);
+	list-style-type:none;
+	max-width:100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align:middle;
+	line-height:100%;
+	cursor:default;
+}
+li.konttag:hover {
+	background-color:rgba(128,128,128,0.1);
+}
+.fieldcont {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	width:100%;
+
+	background-color:gold;
+	justify-content:center; background-color:orange; padding:0.3rem;
+}
+

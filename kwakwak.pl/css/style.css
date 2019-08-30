@@ -1,0 +1,294 @@
+/*
+
+<link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+<link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+<link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+<link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+<style>
+  @media (min-width: 500px) and (max-width: 600px) {
+    h1 {
+      color: fuchsia;
+    }
+
+    .desc:after {
+      content:" In fact, it's between 500px and 600px wide.";
+    }
+  }
+</style>
+
+*/
+@charset "UTF-8";
+
+* {
+	text-align: center;
+	padding:0;
+}
+
+html, body {
+/*	background-color:rgb(0, 191, 255); */
+	background-color:lightgrey;
+
+}
+
+
+
+
+/*-------------------------------BODY--------------------------*/
+
+.section {
+	padding:1% 0;
+	margin: 0 auto;
+	min-height:70vh;
+}
+/*-------------------------------LEWA--------------------------*/
+#lewa
+{
+
+
+
+}
+
+/*------------------------------SRODEK--------------------------*/
+#srodek {
+	background-color:white;
+	border: 1px solid antiquewhite;
+	border-radius: 0.45rem;
+	background-color:white;
+	padding:0.5rem;
+	box-shadow:dimgrey 7px 7px 11px;
+	margin-bottom:2%;
+}
+
+#categories {
+
+	border:1px solid rgba(255,0,0,0.5);
+	padding:0.5rem;
+	margin:0 0.5rem;
+	border-radius:1.3rem;
+	vertical-align:middle;
+	
+}
+legend {
+	margin-left:10%;
+	padding-left:5%;
+	padding-right:5%;
+	font-size:1.2rem;
+}
+.categories {
+	height:100%;
+	width:100%;
+	color:white;
+	background-color:white;
+	padding:0 auto;
+	display:inline-block;
+	list-style-type:none;
+	margin:0 auto;
+	
+}
+.categories > .filtr {
+	color:black;
+	float:left;
+	list-style-type:none;
+	width:10%;
+	margin-bottom:1%;
+	position:relative;
+}
+.filtr > label > i {
+	font-size:1.5rem;
+	color:red;
+	opacity:0.7;
+	display:block;
+	width:100%;
+	height:100%;
+}
+.filtr:hover > label > i {
+	opacity:0.3;
+}
+.catactive > label > i {
+	color:white;
+
+	opacity:1;
+	 background: radial-gradient(circle, orangered 0.1rem, white);
+}
+
+
+.categories > li.filtr > ul.opis {
+	display:none;
+}
+.categories > li.filtr > ul.opis li.ofiltr {
+	position:absolute;
+	color:black;
+	width:8rem;
+	z-index:100;
+	background-color:white;
+	border:1px solid red;
+	list-style-type:none;
+	margin:0 auto;
+	padding:0.25rem 0.5rem;
+}
+.categories > li.filtr:hover > ul.opis{
+	display:block;
+}
+.categories > li.filtr:hover > ul.opis:hover{
+	display:none;
+}
+/*------------------------------PRAWA--------------------------*/
+.prawa {
+	background-color:white;
+	width:97%;
+	margin-left:3%;
+	padding:1rem;
+	border-radius:7px;
+	box-shadow:5px 5px 5px grey;
+} /*
+.lewa {
+	background-color:white;
+	width:97%;
+	margin-right:3%;
+	padding:1rem;
+	border-radius:7px;
+	box-shadow:5px 5px 5px grey;
+} */
+#prawa {
+	
+}
+
+
+	
+
+/* 
+
+
+----------------------HASHTAGI------------------------------
+
+
+*/
+
+/*---------------------------END-OF-BODY-----------------------*/
+aside {
+	height:222px;
+	background-color:dimgrey;
+	padding:50px;
+	opacity:0.5;
+	width:98%;
+	margin: 0 auto;
+	padding:0.5rem;
+}
+aside:hover {
+	opacity:1;
+}
+a {
+	color: grey;
+}
+a:hover {
+    color: brown;
+}
+.infoi {
+	position:relative;
+
+}
+.infoi > .opisi {
+	list-style-type:none;
+	display:none;
+	position:absolute;
+	color:black;
+	z-index:100;
+	width:13rem;
+	background-color:white;
+	border:1px solid red;
+	margin:0 auto;
+	padding:0.25rem 0.5rem;
+}
+.infoi:hover > .opisi {
+	display:block;
+}
+.infoi:hover > .opisi:hover {
+	display:none;
+}
+.line {
+	display:flex;
+	flex-wrap:nowrap;
+	align-items:baseline;
+}
+@media all and (orientation: portrait) {
+	.line {
+		flex-wrap:wrap;
+		align-items:center;
+		align-content:center;
+	}
+}
+/*----------------------------------layout dla php szukaj */
+.row {
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	align-content:space-around;
+}
+.cell {
+	position:relative;
+	background-color:white;
+	margin:1rem;
+	display:flex;
+	flex-wrap:nowrap;
+	flex-direction:column;
+	flex: 1 1 25%;
+	align-content:space-between;
+	justify-content:space-between;
+	cursor:pointer;
+	max-width:calc((100% / 3) - 2rem);
+}
+.omgimg > img {
+	max-width:100%;
+	max-height:auto;
+	cursor:pointer;
+}
+.sbj {
+	padding:0.3rem 0.7rem;
+	text-overflow: "...";
+	overflow: hidden;
+	white-space: nowrap;
+	align-content:center;
+	background-color:lightgrey;
+	border-bottom:1px solid grey;
+}
+.img {
+
+}
+.price {
+	border-top:1px solid grey;
+	padding:0.3rem 0.7rem;
+	align-content:center;
+	background-color:lightgrey;
+
+}
+.price > span > i {
+	color:dimgrey;
+}
+/*----------------------------------layout dla php szukaj */
+.tagindex {
+	background-color:white;
+	padding:0.3rem 0.5rem;
+	margin:0.5rem;
+	border-radius:0.7rem;
+	
+}
+.tagindex > a {
+	color:black;
+}
+.tagindex > a:hover {
+	color:brown;
+}
+.zakladka {
+	padding:1rem;
+	width:30%;
+	background-color:white;
+	color:dimgrey;
+}
+.unactualzakladka:hover {
+	border-color:black;
+	color:black;
+}
+.actualzakladka {
+	border:1px inset grey;
+	background-color:ghostwhite;
+	cursor: default;
+}

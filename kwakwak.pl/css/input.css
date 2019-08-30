@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.submit {
+    /*background-color:rgb(0, 191, 255);*/
+	background-color:white;
+    letter-spacing: 0.25rem;
+    padding:0.4rem 0.25rem;
+    font-size: 1.2rem;
+    color: white;
+	background-color:rgb(255, 102, 0);
+    border: 2px solid rgb(255, 102, 0);
+	border-radius: 0.45rem;
+}
+.submit:hover:not(.reset) {
+		background-color:orange;
+		color:white;
+}
+.reset {
+	background-color:white;
+	color:grey;
+	border-color:orange;
+}
+.reset:hover {
+	border-color:orangered;
+	color:black;
+}
+input[type="text"].textin:hover, input[type="text"].subject:hover, textarea:hover, input[type="text"].tagin:hover, input[type="password"].textin:hover, input[type="email"].textin:hover {
+	background-color:white;
+	border: 1px solid rgb(255, 102, 0);
+}
+input[type="text"].textin, input[type="text"].subject, textarea, input[type="text"].tagin, input[type="password"].textin, input[type="email"].textin, input[type="number"] {
+	font-size:1.2rem;
+	padding:0.1rem 0.25rem;
+	cursor:text;
+}
+input:not(.checkbox):not(.inputtag):not(.subject):not(.number) {
+	width:15rem;
+}
+input:active:not(.inputplus):not(.tagin):not(.subject):not(.number):not(.textin) {
+	border-color:orangered;
+	transform: scale(0.95);
+}
+input[type="text"].textin:focus, input[type="text"].tagin:focus, input[type="password"].textin:focus, input[type="email"].textin:focus {
+	border:1px solid orangered;
+	background-color:white;
+	transform: scale(1.05);
+}
+
+input:not(.submit):not(.inputtag) {
+	text-align:left;
+}
+input[type="checkbox"]:hover
+{
+	box-shadow: 0 0 5px 5px rgb(233, 155, 0);
+}
+textarea {
+	width:92.5%;
+	resize:none;
+	text-align:left;
+	padding:0.5rem;
+}
+textarea, .subject, .number, .textin {
+	border:1px solid black;
+}
+textarea:focus, textarea:active, input[type="text"].subject:active, input[type="text"].subject:focus, .number:active, .number:focus, .number:hover  {
+	border:1px solid orangered;
+}
+input[type="number"].number {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+	appearance:textfield;
+	width:67%;
+	text-align:right;
+}
+.subject {
+	width:90%;
+}

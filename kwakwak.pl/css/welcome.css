@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body {
+	background-color:white;
+}
+@media only screen and (min-width:1200px) {
+	section.orange {
+		border-bottom: 1px solid orangered;
+		border-top:1px solid orangered;
+	}
+}
+main * {
+	margin:0;
+}
+section {
+	min-height:30rem;
+}
+section.orange {
+	background-color:rgba(255, 166, 0, 0.9);
+}
+.text {
+	margin:3rem auto;
+	width:65%;
+	text-align:center;
+	padding:1.5rem;
+	box-shadow:5px 5px 5px rgba(0,0,0,0.1);
+	border-radius:5px;
+}
+.photo {
+	min-height:30rem;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.friend {
+	height:29rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.friend:hover {
+	transform:scale(1.05);
+	cursor:pointer;
+}
+.friend:active {
+	transform:scale(0.95);
+}
+.click {
+	width:50%;
+	height:auto;
+}
+.click:hover {
+	transform:scale(1.05);
+	cursor:pointer;
+}
+.click:active {
+	transform:scale(0.95);
+}
+.logo {
+	margin-left:2%;
+	margin-top:2%;
+	padding:0.5%;
+	background-color:white;
+	width:17rem;
+	border-radius:7px;
+	text-align:center;
+}
+.kwak {
+	position:relative;
+	left:10rem;
+	top:11rem;
+	width:30rem;
+	z-index:111;
+}
+.text p {
+	padding:15px;
+}
+b {
+	color:white;
+	text-shadow:7px 5px 5px rgba(0,0,0, 0.7);
+}
+button {
+	background-color:white;
+	border:2px solid orangered;
+	padding:0.7rem;
+	font-size:2rem;
+	border-radius:7px;
+	letter-spacing:0.3rem;
+	color:orangered;
+	font-weight:bold;
+	box-shadow:5px 5px 5px rgba(0,0,0,0.3);
+}
+button:hover {
+
+	border:2px solid orangered;
+	transform:scale(1.05);
+}
+button:active{
+	transform:scale(0.95);
+}
+a {color:black;}
